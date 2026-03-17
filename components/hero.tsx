@@ -33,7 +33,7 @@ const Hero = () => {
                     </div>
 
                     {/* Features List */}
-                    <div className="flex flex-col lg:flex-row max-w-[674px] mt-4 lg:mt-6 gap-2 lg:gap-4">
+                    <div className="flex flex-col lg:flex-row max-w-[674px] mt-4 lg:mt-6 gap-2 lg:gap-4 text-black">
                         <div className="flex items-center gap-1">
                             <div className="bg-green-100 rounded-full p-1">
                                 <CircleCheck className="w-5 h-5 text-green-600" />
@@ -114,7 +114,7 @@ const Hero = () => {
                             </p>
                         </div>
 
-                        <div className="mt-4 space-y-2">
+                        <div className="mt-4 space-y-2 text-black">
                             <div className="flex items-center gap-1">
                                 <CircleCheck className="text-green-600 w-4 h-4" />
                                 <span className="text-sm">Approved in minutes</span>
