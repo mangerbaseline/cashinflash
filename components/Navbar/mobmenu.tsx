@@ -1,4 +1,4 @@
-import { MapPin, ArrowRight } from "lucide-react";
+import { MapPin, ArrowRight ,ChevronUp} from "lucide-react";
 import Image from "next/image";
 
 export default function SidebarMenu() {
@@ -10,7 +10,7 @@ export default function SidebarMenu() {
 
                 {/* LOANS */}
                 <div className="text-base mb-3 ml-5 max-w-[237px] h-[169px] gap-5 ">
-                    <p className="text-[#13EC6D] text-base mb-3 mt-7">LOANS</p>
+                    <p className="flex flex-row justify-between text-[#13EC6D] text-base mb-3 mt-7">LOANS <ChevronUp className="text-white" size={20}/></p>
 
                     <ul className="space-y-3 text-sm w-[237px] h-[123px] gap-3 ">
 
@@ -68,8 +68,8 @@ export default function SidebarMenu() {
                         </p>
 
                         <div className="flex gap-2 pt-2 h-[41.07px] w-[250px] mt-5">
-                            <img src="/applestore.svg" className="h-[41.07px] w-[123px]" />
-                            <img src="/googleplay.svg" className="h-[41.07px] w-[123px]" />
+                            <img src="/applestore.svg" className="h-[41.07px] w-[100px]" />
+                            <img src="/googleplay.svg" className="h-[41.07px] w-[100px]" />
                         </div>
                     </div>
                 </div>

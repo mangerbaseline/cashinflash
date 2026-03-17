@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function Footer() {
+export default function   Footer() {
   return (
     <footer className="w-full bg-[#F5F7F6] pt-16 pb-10">
       <div className="px-4 md:px-8 lg:px-12  mx-auto">
@@ -54,7 +54,7 @@ export default function Footer() {
           </div>
 
           {/* Sign up */}
-          <div className="hidden md:block md:mt-8  md:mt-0 md:mr-20">
+          <div className="hidden lg:block md:mt-8  md:mt-0 md:mr-20">
             <div className="">
             <h4 className="font-semibold mb-4">Sign up</h4>
 

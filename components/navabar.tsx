@@ -49,34 +49,33 @@ const Navbar = () => {
     };
 
     return (
-        <nav className="h-30 sm:h-[142px]">
-            <div className="sm:h-[124px] sm:top-[18px] ">
-                <div className="h-[106px] opacity-100 flex flex-col gap-[18px]">
-                    <div className="border-b border-[#E8E8E8] pt-2 pb-2">
-                        <h1 className="text-[#353535] hidden lg:block font-poppins font-medium text-[16px] leading-[27px] tracking-normal text-center align-middle">
+        <nav className=" px-2 bg-white relative z-50">
+            <div className="h-[106px] sm:h-[142px] w-full">
+                <div className="h-full flex flex-col">
+                    {/* Top Banner */}
+                    <div className="border-b border-[#E8E8E8] py-2 px-4 sm:px-0">
+                        <h1 className="max-w-7xl text-[#353535] hidden lg:block font-poppins font-medium text-[16px] leading-[27px] tracking-normal text-center align-middle max-w-[1440px] mx-auto">
                             Get Fast Cash Today: Secure Payday Loans with Instant Approval and Same-Day Deposits. Apply Online in Minutes!
                         </h1>
                         <div className="flex justify-center lg:hidden">
-                            <div className="h-[23px] w-auto mt-2 ">
-                                <h1 className="text-[14px]">
+                            <div className="h-[23px] w-auto mt-1">
+                                <h1 className="text-[12px] sm:text-[14px] text-center whitespace-nowrap sm:whitespace-normal px-2">
                                     Fast Cash with Instant Payday Approval
                                 </h1>
                             </div>
                         </div>
                     </div>
 
-                    {/* <hr className="sm:border-t border-[#E8E8E8] w-[1440px] h-[1px]" /> */}
-
-                    <div className="flex w-full h-[60%] items-center justify-between sm:hidden px-8">
+                    {/* Mobile Menu Section */}
+                    <div className="flex w-full h-[60%] items-center justify-between sm:hidden px-6">
                         <Image
                             src="/Logo.png"
                             alt="Clash In Flash"
                             width={148}
                             height={19}
                             className="w-28 h-auto"
+                            priority
                         />
-
-
 
                         {showMobileMenu ? (
                             <Image
@@ -96,36 +95,36 @@ const Navbar = () => {
                         )}
                     </div>
 
-
-                    <div className="hidden sm:flex sm:w-[1220px] mx-auto  items-end justify-between">
-                        <div className="sm:w-[540px] h-[32px] flex flex-row gap-[71px]">
+                    {/* Desktop Menu Section */}
+                    <div className="max-w-7xl hidden sm:flex w-full mx-auto p-2 justify-between h-full pb-4">
+                        <div className="flex flex-row gap-[30px] lg:gap-[71px] items-center">
                             <Image
                                 src="/Logo.png"
                                 alt="Clash In Flash"
                                 width={250}
                                 height={32}
-                                className="w-28 sm:w-40 md:w-52 h-auto mr-2"
+                                className="w-32 md:w-43"
+                                priority
                             />
 
-
-                            <div className="hidden sm:flex flex-row gap-[30px] font-serif">
+                            <div className="flex flex-row gap-[20px] lg:gap-[30px] font-serif">
                                 {/* Loans with Click Dropdown */}
                                 <div className="relative" ref={loansRef}>
                                     <button
                                         onClick={handleLoansClick}
-                                        className="text-[#353535] font-poppins font-medium text-[16px] leading-[27px] tracking-normal text-center align-middle cursor-pointer bg-transparent border-none"
+                                        className="text-[#353535] font-poppins font-medium text-[14px] lg:text-[16px] leading-[27px] tracking-normal text-center align-middle cursor-pointer bg-transparent border-none hover:text-green-600 transition-colors whitespace-nowrap"
                                     >
                                         Loans
                                     </button>
                                     {showLoans && (
-                                        <div className="absolute left-0 top-full mt-2 z-50">
+                                        <div className="absolute left-0 top-full mt-2 z-[100]">
                                             <NavHoverLoans />
                                         </div>
                                     )}
                                 </div>
 
                                 {/* Locations - No hover, no dropdown */}
-                                <span className="text-[#353535] font-poppins font-medium text-[16px] leading-[27px] tracking-normal text-center align-middle">
+                                <span className="text-[#353535] font-poppins font-medium text-[14px] lg:text-[16px] leading-[27px] tracking-normal text-center align-middle whitespace-nowrap">
                                     Locations
                                 </span>
 
@@ -133,12 +132,12 @@ const Navbar = () => {
                                 <div className="relative" ref={saveRef}>
                                     <button
                                         onClick={handleSaveClick}
-                                        className="text-[#353535] font-poppins font-medium text-[16px] leading-[27px] tracking-normal text-center align-middle cursor-pointer bg-transparent border-none"
+                                        className="text-[#353535] font-poppins font-medium text-[14px] lg:text-[16px] leading-[27px] tracking-normal text-center align-middle cursor-pointer bg-transparent border-none hover:text-green-600 transition-colors whitespace-nowrap"
                                     >
                                         Save
                                     </button>
                                     {showSave && (
-                                        <div className="absolute left-0 top-full mt-2 z-50">
+                                        <div className="absolute left-0 top-full mt-2 z-[100]">
                                             <NavHoverSave />
                                         </div>
                                     )}
@@ -146,19 +145,20 @@ const Navbar = () => {
                             </div>
                         </div>
 
-                        <div>
-                            <div className="hidden sm:flex font-serif items-center h-[47px] w-[423px] gap-[35px]">
-                                <span className="text-[#353535] font-poppins font-medium text-[16px] leading-[27px] tracking-normal text-center align-middle flex items-center gap-[8px]">
-                                    <MapPin size={18} />
-                                    Find a Store
+                        <div className="flex-shrink-0 ">
+                            <div className="flex font-poppins items-center h-[47px] gap-[15px] lg:gap-[35px] p-2">
+                                <span className="text-[#353535] font-poppins font-medium text-[14px] lg:text-[16px] leading-[27px] tracking-normal text-center align-middle flex items-center gap-[8px] whitespace-nowrap hover:text-green-600 transition-colors cursor-pointer">
+                                    <MapPin size={18} className="flex-shrink-0" />
+                                    <span className="hidden lg:inline font-poppins">Find a Store</span>
+                                    <span className="lg:hidden">Store</span>
                                 </span>
 
-                                <div className="flex items-center gap-[10px] w-[260px] h-[47px]">
-                                    <button className="text-[#353535] font-poppins font-medium text-[16px] leading-[27px] tracking-normal text-center align-middle flex items-center justify-center w-[125px] h-[47px] bg-[linear-gradient(86.41deg,#15C15D_1.64%,#13EC6D_98.36%)] text-white rounded-[40px] cursor-pointer">
+                                <div className="flex items-center gap-[10px]">
+                                    <button className="text-white font-poppins font-medium text-[14px] lg:text-[16px] leading-[27px] tracking-normal text-center align-middle flex items-center justify-center w-[100px] lg:w-[125px] h-[47px] bg-[linear-gradient(86.41deg,#15C15D_1.64%,#13EC6D_98.36%)] rounded-[40px] cursor-pointer whitespace-nowrap hover:opacity-90 transition-opacity">
                                         Apply now
                                     </button>
 
-                                    <button className="text-[#353535] font-poppins font-medium text-[16px] leading-[27px] tracking-normal text-center align-middle flex items-center justify-center w-[125px] h-[47px] border border-green-500 rounded-[40px] bg-transparent cursor-pointer">
+                                    <button className="text-[#353535] font-poppins font-medium text-[14px] lg:text-[16px] leading-[27px] tracking-normal text-center align-middle flex items-center justify-center w-[80px] lg:w-[125px] h-[47px] border border-green-500 rounded-[40px] bg-transparent cursor-pointer whitespace-nowrap hover:bg-green-50 transition-colors">
                                         Login
                                     </button>
                                 </div>
@@ -167,8 +167,10 @@ const Navbar = () => {
                     </div>
                 </div>
             </div>
+
+            {/* Mobile Menu Dropdown */}
             {showMobileMenu && (
-                <div className="absolute top-[120px] left-0 w-full bg-white z-50 p-4">
+                <div className="absolute top-[106px] left-0 w-full bg-white z-[100] p-4 shadow-lg">
                     <SidebarMenu />
                 </div>
             )}
