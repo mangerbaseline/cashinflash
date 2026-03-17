@@ -49,7 +49,7 @@ const Navbar = () => {
     };
 
     return (
-        <nav className=" px-2 bg-white relative z-50">
+        <nav className=" px-2 bg-white text-black relative z-50">
             <div className="h-[106px] sm:h-[142px] w-full">
                 <div className="h-full flex flex-col">
                     {/* Top Banner */}
