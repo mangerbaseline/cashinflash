@@ -60,7 +60,7 @@ const Hero = () => {
 
                     {/* Review Badges */}
                     <div className="flex items-center gap-[20px] pt-4 max-w-[370px] h-[36.04px] mt-8">
-                        <Image src='/googlereview.svg' alt="Google Reviews" width={89} height={36.04} />
+                        <Image src='/googleReview.svg' alt="Google Reviews" width={89} height={36.04} />
                         <Image src='/buisness.svg' alt="Acceredited Buisness" width={89} height={36.04} />
                         <Image src='/consumer.svg' alt="Consumer Affairs" width={89} height={36.04} />
                     </div>
