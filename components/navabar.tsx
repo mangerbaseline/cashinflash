@@ -95,8 +95,9 @@ const Navbar = () => {
                         )}
                     </div>
 
+                    
                     {/* Desktop Menu Section */}
-                    <div className="max-w-7xl hidden sm:flex w-full mx-auto p-2 justify-between h-full pb-4">
+                    <div className="max-w-7xl hidden sm:flex w-full mx-auto p-2 justify-between h-full pb-4 md:px-10">
                         <div className="flex flex-row gap-[30px] lg:gap-[71px] items-center">
                             <Image
                                 src="/Logo.png"
@@ -145,15 +146,17 @@ const Navbar = () => {
                             </div>
                         </div>
 
-                        <div className="flex-shrink-0 ">
-                            <div className="flex font-poppins items-center h-[47px] gap-[15px] lg:gap-[35px] p-2">
-                                <span className="text-[#353535] font-poppins font-medium text-[14px] lg:text-[16px] leading-[27px] tracking-normal text-center align-middle flex items-center gap-[8px] whitespace-nowrap hover:text-green-600 transition-colors cursor-pointer">
+                        <div className="flex-shrink-0 flex items-center">
+                            <div className="flex items-center h-[47px] gap-[15px] lg:gap-[35px] p-2">
+                                {/* Find a Store */}
+                                <div className="flex items-center gap-[8px] whitespace-nowrap hover:text-green-600 transition-colors cursor-pointer h-full">
                                     <MapPin size={18} className="flex-shrink-0" />
-                                    <span className="hidden lg:inline font-poppins">Find a Store</span>
-                                    <span className="lg:hidden">Store</span>
-                                </span>
+                                    <span className="hidden lg:inline font-poppins font-medium text-[14px]  ">Find a Store</span>
+                                    <span className="lg:hidden font-poppins font-medium text-[14px] lg:text-[16px] leading-[27px]">Store</span>
+                                </div>
 
-                                <div className="flex items-center gap-[10px]">
+                                {/* Buttons */}
+                                <div className="flex gap-[10px]">
                                     <button className="text-white font-poppins font-medium text-[14px] lg:text-[16px] leading-[27px] tracking-normal text-center align-middle flex items-center justify-center w-[100px] lg:w-[125px] h-[47px] bg-[linear-gradient(86.41deg,#15C15D_1.64%,#13EC6D_98.36%)] rounded-[40px] cursor-pointer whitespace-nowrap hover:opacity-90 transition-opacity">
                                         Apply now
                                     </button>

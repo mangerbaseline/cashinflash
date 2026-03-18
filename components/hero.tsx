@@ -3,9 +3,9 @@ import { CircleCheck, Star } from 'lucide-react';
 
 const Hero = () => {
     return (
-        <section className="w-full min-h-[999px] md:min-h-[670px] md:py-15  bg-[url('/hero.svg')] md:bg-[url('/hero-desk.svg')] bg-no-repeat bg-cover bg-bottom relative overflow-x-hidden">
+        <section className="w-full md:min-h-[670px] md:py-15  bg-[url('/hero.svg')] md:bg-[url('/hero-desk.svg')] bg-no-repeat bg-cover bg-bottom relative overflow-x-hidden">
             {/* Desktop Layout - Visible on md and up */}
-            <div className="hidden md:flex max-w-7xl px-6 mx-auto h-full items-center">
+            <div className="hidden md:flex max-w-7xl mx-auto md:px-8 lg:px-2 h-full items-center justify-around">
                 {/* Left Content */}
                 <div className="flex flex-col">
                     <div className="flex flex-col gap-[18px] lg:gap-[24px]">
@@ -76,8 +76,8 @@ const Hero = () => {
                 </div>
 
                 {/* Right Image/Illustration */}
-                <div className="flex-1 flex justify-center max-w-[429.75px] ml-auto mr-4 lg:mr-8 xl:mr-[93px]">
-                    <div className="relative w-full aspect-square max-w-[400px]">
+                <div className=" flex justify-center">
+                    <div className="relative aspect-square w-90 lg:w-[583px]">
                         <Image
                             src="/hero.png"
                             alt="Fast Cash Hero"
@@ -90,7 +90,7 @@ const Hero = () => {
             </div>
 
             {/* Mobile/Tablet Layout - Visible below md */}
-            <div className="flex md:hidden flex-col items-center min-h-[999px] px-4 py-8">
+            <div className="flex md:hidden flex-col items-center  px-4 py-8">
                 {/* LEFT CONTENT */}
                 <div className="w-full max-w-[330px] flex flex-col gap-6">
                     <div className="w-full">
