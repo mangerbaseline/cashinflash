@@ -150,9 +150,9 @@ const Navbar = () => {
                             <div className="flex items-center h-[47px] gap-[15px] lg:gap-[35px] p-2">
                                 {/* Find a Store */}
                                 <div className="flex items-center gap-[8px] whitespace-nowrap hover:text-green-600 transition-colors cursor-pointer h-full">
-                                    <MapPin size={18} className="flex-shrink-0" />
-                                    <span className="hidden lg:inline font-poppins font-medium text-[14px]  ">Find a Store</span>
-                                    <span className="lg:hidden font-poppins font-medium text-[14px] lg:text-[16px] leading-[27px]">Store</span>
+                                    <MapPin size={18} className="flex-shrink-0 text-[#353535]" />
+                                    <span className="hidden lg:inline font-poppins font-medium text-[14px] text-[#353535] ">Find a Store</span>
+                                    <span className="lg:hidden font-poppins font-medium text-[14px] lg:text-[16px] leading-[27px] text-[#353535]">Store</span>
                                 </div>
 
                                 {/* Buttons */}
