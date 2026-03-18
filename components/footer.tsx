@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Footer() {
   return (
     <footer className="w-full bg-[#F5F7F6] pt-16 pb-10">
-      <div className="px-4 md:px-8 lg:px-12 mx-auto">
+      <div className="max-w-7xl px-4 md:px-8 lg:px-12 mx-auto">
         {/* top flex container */}
         <div className="flex flex-wrap lg:flex-nowrap">
           {/* Quick links */}
@@ -110,7 +110,7 @@ export default function Footer() {
       </div>
 
       {/* bottom */}
-      <div className="flex flex-col md:flex-row md:justify-between md:items-center mt-16 border-t md:border-t-0 pt-8 px-4 md:px-8 lg:px-12">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row md:justify-between md:items-center mt-16 border-t md:border-t-0 pt-8 px-4 md:px-8 lg:px-12">
         <Image src={'/Logo.png'} alt="" height={19} width={148} className="h-[19px] md:h-[36px] md:w-[250px]" />
 
         <div className="flex flex-wrap gap-4 md:gap-6 text-sm text-gray-500 mt-4 md:mt-0">

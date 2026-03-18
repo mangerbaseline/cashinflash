@@ -2,9 +2,9 @@ import Image from "next/image";
 
 const CashSection = () => {
   return (
-    <section className="w-full mb-14">
-      <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
-        <div className="flex flex-col md:flex-row items-center gap-10 md:gap-8 lg:gap-10">
+    <section className="w-full bg-white">
+      
+        <div className="max-w-7xl py-10 px-7.5 mx-auto flex flex-col md:flex-row place-items-center gap-10 md:gap-8 lg:gap-10 lg:px-30 lg:py-23">
           
           {/* Left images */}
           <div className="w-full md:w-1/2 flex justify-center">
@@ -41,15 +41,15 @@ const CashSection = () => {
 
           {/* Right content */}
           <div className="w-full md:w-1/2">
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-tilt-warp font-normal">
+            <h2 className="text-4xl lg:text-5xl font-tilt-warp font-normal">
               Cash Advances For <br />
               <span className="relative text-green-500">
-                Whatever 
+                Whatever {" "}
                 <Image
                   src="/underline.svg"
                   alt=""
-                  width={187}
-                  height={20}
+                  width={233}
+                  height={0}
                   className="absolute left-0 bottom-[-6px] w-full"
                 />
               </span>
@@ -78,7 +78,7 @@ const CashSection = () => {
             </div>
 
             <div className="mt-8 flex gap-4">
-              <button className="bg-gradient-to-r from-[#15C15D] to-[#13EC6D] text-white px-8 py-3 rounded-full font-semibold hover:opacity-90 transition-opacity">
+              <button className="bg-gradient-to-r from-[#15C15D] to-[#13EC6D] text-white px-4 py-2 lg:px-5 lg:py-3  rounded-full font-semibold hover:opacity-90 transition-opacity">
                 Apply now
               </button>
               <button className="text-gray-600 font-medium hover:text-gray-900 transition-colors">
@@ -87,7 +87,7 @@ const CashSection = () => {
             </div>
           </div>
         </div>
-      </div>
+      
     </section>
   );
 };

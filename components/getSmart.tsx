@@ -2,36 +2,36 @@ import Image from "next/image";
 
 const FinancialEducation = () => {
   return (
-    <section className="w-full py-24 bg-[#F4F7F6] overflow-hidden">
-      <div className=" mx-auto px-6 text-center">
+    <section className="w-full py-12 lg:py-24 bg-[#F4F7F6] overflow-hidden">
+      <div className=" max-w-7xl mx-auto px-6 text-center">
 
         {/* heading */}
         <h2 className="text-4xl md:text-5xl font-tilt-warp font-normal text-black">
-  Get{" "}
-  <span className="relative inline-block text-green-500">
-    Smarter
+          Get{" "}
+          <span className="relative inline-block text-green-500">
+            Smarter
 
-    <Image
-      src="/underline.svg"
-      alt=""
-      width={187}
-      height={20}
-      className="absolute left-0 bottom-[-6px] w-full"
-    />
-  </span>{" "}
-  With
-  <br />
-  Your Money.
-</h2>
-        
+            <Image
+              src="/underline.svg"
+              alt=""
+              width={187}
+              height={20}
+              className="absolute left-0 bottom-[-6px] w-full"
+            />
+          </span>{" "}
+          With
+          <br />
+          Your Money.
+        </h2>
+
 
         <p className="text-gray-500 mt-4  mx-auto">
           Stop guessing with your money and start <br className="block md:hidden" /> making it work harder
-          through smart,<br className="block md:hidden"/> actionable strategies.
+          through smart,<br className="block md:hidden" /> actionable strategies.
         </p>
 
         {/* cards */}
-          <div className="flex md:flex-row justify-around md:p-15">
+        <div className="flex md:flex-row justify-around md:p-15">
 
           <div className="hidden md:block text-left">
             <div className="rounded-xl">
@@ -95,8 +95,8 @@ const FinancialEducation = () => {
       </div>
 
       {/* background shapes */}
-      <div className="absolute w-60 h-60 bg-green-100 rounded-full opacity-40 blur-2xl left-20 bottom-20"></div>
-      <div className="absolute w-72 h-72 bg-green-100 rounded-full opacity-30 blur-2xl top-32 left-1/2 -translate-x-1/2"></div>
+      {/* <div className="absolute w-60 h-60 bg-green-100 rounded-full opacity-40 blur-2xl left-20 bottom-20"></div> */}
+      {/* <div className="absolute w-72 h-72 bg-green-100 rounded-full opacity-30 blur-2xl top-32 left-1/2 -translate-x-1/2"></div> */}
 
     </section>
   );

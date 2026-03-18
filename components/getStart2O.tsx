@@ -54,9 +54,9 @@ export default function AppPromotion() {
                     <div className="w-[633px]">
 
                         <h2 className="text-white font-tilt-warp font-normal text-5xl">
-                            Smart <span className="text-[#13EC6D]">Financial Solutions,</span> Right At Your Fingertips.
+                            Smart <span className="relative text-[#13EC6D]">Financial Solutions,<Image src={'/getStart/underline.svg'} alt="" width={468} height={0} className="absolute left-0" /></span> Right At Your Fingertips.
                         </h2>
-                        <Image src={'/underline.svg'} alt="" width={187} height={0} className="absolute w-[133px] left-7 top-25 md:left-39 md:top-10 md:w-[468px] md:h-4" />
+                        
 
                         <p className="mt-2 text-white text-lg font-normal">
                             The Cash in Flash app helps you set goals and save automatically.

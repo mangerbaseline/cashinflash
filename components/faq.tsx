@@ -28,9 +28,9 @@ export default function FAQSection() {
               <Image
                 src="/underline.svg"
                 alt=""
-                width={195}
-                height={20}
-                className="absolute left-0 bottom-[-6px] w-full "
+                width={220}
+                height={0}
+                className="absolute left-0 bottom-[-6px]"
               />
             </span>
           </h2>

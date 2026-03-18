@@ -90,7 +90,7 @@ const Hero = () => {
             </div>
 
             {/* Mobile/Tablet Layout - Visible below md */}
-            <div className="flex md:hidden flex-col items-center  px-4 py-8">
+            <div className="flex md:hidden flex-col items-center  px-8 py-9">
                 {/* LEFT CONTENT */}
                 <div className="w-full max-w-[330px] flex flex-col gap-6">
                     <div className="w-full">
@@ -114,24 +114,24 @@ const Hero = () => {
                             </p>
                         </div>
 
-                        <div className="mt-4 space-y-2 text-black">
-                            <div className="flex items-center gap-1">
+                        <div className="flex flex-col mt-4 stext-black gap-1.5">
+                            <div className="flex items-center ">
                                 <CircleCheck className="text-green-600 w-4 h-4" />
                                 <span className="text-sm">Approved in minutes</span>
                             </div>
-                            <div className="flex items-center gap-1">
+                            <div className="flex items-center ">
                                 <CircleCheck className="text-green-600 w-4 h-4" />
                                 <span className="text-sm">Money same day</span>
                             </div>
-                            <div className="flex items-center gap-1">
+                            <div className="flex items-center ">
                                 <CircleCheck className="text-green-600 w-4 h-4" />
                                 <span className="text-sm">Good credit not needed</span>
                             </div>
                         </div>
                     </div>
 
-                    <div className="max-w-[314px]">
-                        <button className="mt-6 bg-[linear-gradient(86.41deg,#15C15D_1.64%,#13EC6D_98.36%)] text-white px-8 py-3 rounded-full font-semibold">
+                    <div className="flex flex-col gap-2">
+                        <button className="bg-[linear-gradient(86.41deg,#15C15D_1.64%,#13EC6D_98.36%)] text-white px-4.2 py-1.5 rounded-full font-semibold w-30">
                             Apply now
                         </button>
                         <p className="text-gray-500 text-sm mt-2 italic">
@@ -139,7 +139,7 @@ const Hero = () => {
                         </p>
                     </div>
 
-                    <div className="flex items-center gap-1 md:gap-5 mt-7">
+                    <div className="flex items-center gap-1 md:gap-5 mt-7.5">
                         <Image src="/googleReview.svg" width={80} height={32} alt="google" className="max-w-[153px] h-6" />
                         <Image src="/buisness.svg" width={80} height={20} alt="bbb" className="max-w-[153px] h-6" />
                         <Image src="/consumer.svg" width={80} height={23} alt="consumer" className="max-w-[153px] h-6" />
@@ -147,7 +147,7 @@ const Hero = () => {
                 </div>
 
                 {/* RIGHT IMAGE */}
-                <div className="w-full max-w-[480px] mt-5 relative" style={{ height: '345px' }}>
+                <div className="w-full relative" style={{ height: '345px', width: '330px' }}>
                     <Image
                         src="/hero.png"
                         alt="Fast Cash Hero"
