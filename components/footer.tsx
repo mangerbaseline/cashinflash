@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-[#F5F7F6] pt-16 pb-10">
+    <footer className="w-full bg-[#F5F7F6] pt-16 pb-10 text-black ">
       <div className="max-w-7xl px-4 md:px-8 lg:px-12 mx-auto">
         {/* top flex container */}
         <div className="flex flex-wrap lg:flex-nowrap">

@@ -90,7 +90,7 @@ const Hero = () => {
             </div>
 
             {/* Mobile/Tablet Layout - Visible below md */}
-            <div className="flex md:hidden flex-col items-center  px-8 py-9">
+            <div className="flex md:hidden flex-col items-center  px-8 py-9 text-black">
                 {/* LEFT CONTENT */}
                 <div className="w-full max-w-[330px] flex flex-col gap-6">
                     <div className="w-full">

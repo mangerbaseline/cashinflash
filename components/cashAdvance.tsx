@@ -40,7 +40,7 @@ const CashSection = () => {
           </div>
 
           {/* Right content */}
-          <div className="w-full md:w-1/2">
+          <div className="w-full md:w-1/2 text-gray-900">
             <h2 className="text-4xl lg:text-5xl font-tilt-warp font-normal">
               Cash Advances For <br />
               <span className="relative text-green-500">
