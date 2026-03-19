@@ -4,7 +4,7 @@ import Image from "next/image";
 const GetStartedTwo = () => {
   return (
     <section className="w-full bg-[#F4F7F6] py-12 md:py-16 lg:py-20">
-      <div className="max-w-6xl mx-auto  px-4 py-11.2 sm:px-6 lg:px-8">
+      <div className="max-w-6xl mx-auto  px-4 py-11.2 sm:px-6 lg:px-8 text-gray-900">
 
         {/* top section */}
         <div className="flex flex-col lg:flex-row justify-between items-start gap-8 lg:gap-10 mb-12 lg:mb-16">
